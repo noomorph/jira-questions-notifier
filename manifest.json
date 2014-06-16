@@ -1,0 +1,15 @@
+{
+   "content_scripts": [ {
+      "js": [ "notifier.js" ],
+      "matches": [ "http://jira.wixpress.com/browse/*" ],
+      "run_at": "document_end"
+   } ],
+   "description": "Adds a badge to the JIRA page corner if there are any unanswered questions",
+   "icons": {
+      "128": "icon.png"
+   },
+   "web_accessible_resources": ["ribbon.png"],
+   "manifest_version": 2,
+   "name": "JIRA Questions Notifier",
+   "version": "0.1"
+}
